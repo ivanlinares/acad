@@ -3,6 +3,7 @@
   Echo "This script needs to be run As Admin"
   Break
  }
+Get-Item C:\Autodesk* | Remove-Item -Force 
 Get-Item ${env:programfiles}\Autodesk* | Remove-Item -Force  
 Get-Item ${env:programfiles}'\Common Files'\Autodesk* | Remove-Item -Force  
 Get-Item ${env:programfiles(x86)}\Autodesk* | Remove-Item -Force  
